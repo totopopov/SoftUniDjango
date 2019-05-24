@@ -1,5 +1,6 @@
 from rest_framework import views, generics, response, status
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
 
 from .models import UserProfile
 from .serializers import UserProfileSerializer
@@ -9,5 +10,4 @@ from .serializers import UserProfileSerializer
 
 
 class CreateUserProfileView(generics.CreateAPIView):
-    queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
