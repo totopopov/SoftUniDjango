@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484bd782-624c-4b93-89b8-8cb21496c78f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lunch_orders.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lunch_orders.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lunch_orders/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lunch_orders/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,50 +49,55 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lunch_orders" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+        <entry file="file://$PROJECT_DIR$/lunch_orders/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="255">
+              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+              <folding>
+                <element signature="e#313#322#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/apps.py">
+        <entry file="file://$USER_HOME$/Anaconda3/envs/django/Lib/site-packages/decouple.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lunch_orders/__init__.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/accounts/tests.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="391">
               <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -108,10 +118,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/auth_user">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="3f773c41-7fc3-43f3-989f-d2dc5553d533">
-              <filtering>
-                <filter text="" />
-              </filtering>
+            <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+              <filtering />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/auth_group">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+              <filtering />
             </state>
           </provider>
         </entry>
@@ -119,120 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/accounts_userprofile">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="3f773c41-7fc3-43f3-989f-d2dc5553d533">
-              <filtering>
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3808710a-9c3c-4f83-8fd9-12a5c4644e1a/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://DATABASE/3808710a-9c3c-4f83-8fd9-12a5c4644e1a.SCHEMA:main">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>3808710a-9c3c-4f83-8fd9-12a5c4644e1a.SCHEMA:main</OriginalElement>
-              <nodes>
-                <node x="196.0" y="529.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_groups</node>
-                <node x="582.0" y="529.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.authtoken_token</node>
-                <node x="249.32045454545454" y="221.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_permission</node>
-                <node x="344.0" y="723.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_session</node>
-                <node x="546.0" y="723.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.sqlite_sequence</node>
-                <node x="630.3659090909091" y="0.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_content_type</node>
-                <node x="358.0" y="529.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_user_permissions</node>
-                <node x="0.0" y="529.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group_permissions</node>
-                <node x="158.0" y="723.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_migrations</node>
-                <node x="73.56363636363636" y="243.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group</node>
-                <node x="729.0" y="529.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.accounts_userprofile</node>
-                <node x="0.0" y="723.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.sqlite_master</node>
-                <node x="919.0" y="474.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_admin_log</node>
-                <node x="568.5" y="144.0">3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_permission" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_content_type">
-                  <point x="0.0" y="-58.0" />
-                  <point x="329.32045454545454" y="119.0" />
-                  <point x="669.1159090909091" y="119.0" />
-                  <point x="-38.75" y="47.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.authtoken_token" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user">
-                  <point x="0.0" y="-47.0" />
-                  <point x="0.0" y="135.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group_permissions" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_permission">
-                  <point x="44.0" y="-47.0" />
-                  <point x="132.0" y="454.0" />
-                  <point x="289.32045454545454" y="454.0" />
-                  <point x="-40.0" y="58.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_admin_log" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_content_type">
-                  <point x="46.75" y="-102.0" />
-                  <point x="1059.25" y="119.0" />
-                  <point x="746.6159090909091" y="119.0" />
-                  <point x="38.75" y="47.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_groups" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group">
-                  <point x="-35.5" y="-47.0" />
-                  <point x="231.5" y="444.0" />
-                  <point x="171.06363636363636" y="444.0" />
-                  <point x="32.5" y="36.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.django_admin_log" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user">
-                  <point x="-46.75" y="-102.0" />
-                  <point x="965.75" y="444.0" />
-                  <point x="707.1" y="444.0" />
-                  <point x="61.60000000000002" y="135.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_user_permissions" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_permission">
-                  <point x="-51.0" y="-47.0" />
-                  <point x="409.0" y="434.0" />
-                  <point x="369.32045454545454" y="434.0" />
-                  <point x="40.0" y="58.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group_permissions" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_group">
-                  <point x="-44.0" y="-47.0" />
-                  <point x="44.0" y="454.0" />
-                  <point x="106.06363636363636" y="454.0" />
-                  <point x="-32.5" y="36.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.accounts_userprofile" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user">
-                  <point x="0.0" y="-47.0" />
-                  <point x="814.0" y="454.0" />
-                  <point x="676.3" y="454.0" />
-                  <point x="30.799999999999955" y="135.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_user_permissions" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user">
-                  <point x="51.0" y="-47.0" />
-                  <point x="511.0" y="454.0" />
-                  <point x="614.7" y="454.0" />
-                  <point x="-30.799999999999955" y="135.0" />
-                </edge>
-                <edge source="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user_groups" target="3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user">
-                  <point x="35.5" y="-47.0" />
-                  <point x="302.5" y="444.0" />
-                  <point x="583.9" y="444.0" />
-                  <point x="-61.60000000000002" y="135.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0079545454545453" x="599.1059751972942" y="508.10597519729424" />
-              <SelectedNodes>
-                <node>3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
+            <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+              <filtering />
             </state>
           </provider>
         </entry>
@@ -252,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lunch_orders/settings.py" />
         <option value="$PROJECT_DIR$/accounts/urlpatterns.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/accounts/migrations/serializers.py" />
@@ -264,12 +168,14 @@
         <option value="$PROJECT_DIR$/accounts/utils.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3808710a-9c3c-4f83-8fd9-12a5c4644e1a/console.sql" />
+        <option value="$PROJECT_DIR$/lunch_orders/settings.py" />
+        <option value="$PROJECT_DIR$/settings.ini" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="13" />
-    <option name="y" value="377" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1280" />
     <option name="height" value="528" />
   </component>
@@ -281,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -309,19 +214,21 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\Desktop\SoftUni\DjangoProject\SoftUniDjango\lunch_orders" />
       <recent name="C:\Users\Lenovo\Desktop\SoftUni\DjangoProject\SoftUniDjango\lunch_orders\accounts" />
     </key>
   </component>
@@ -345,10 +252,13 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="lunch_orders.settings" />
+        <env name="DB_PASS" value="pass321" />
+        <env name="DB_USER" value="lunch_orders_owner" />
+        <env name="DB_NAME" value="lunch_orders" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Lenovo\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -373,26 +283,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558711296102</updated>
-      <workItem from="1558711301547" duration="10661000" />
+      <workItem from="1558711301547" duration="13555000" />
+      <workItem from="1558735279278" duration="1128000" />
+      <workItem from="1558736429676" duration="2654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10661000" />
+    <option name="totallyTimeSpent" value="17337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" weight="0.32974428" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32974428" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32974428" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.32974428" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.1285347" />
+      <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.1285347" />
+      <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.1285347" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37146702" />
@@ -400,11 +305,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" weight="0.32969153" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.32969153" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32974428" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32974428" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="4" weight="0.5981432" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,16 +329,6 @@
     <entry file="file://$PROJECT_DIR$/accounts/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lunch_orders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lunch_orders/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lunch_orders/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -437,28 +339,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lunch_orders/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lunch_orders/initiateSuperUser.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lunch_orders/initiateSuperUser.py" />
     <entry file="file://$PROJECT_DIR$/accounts/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="uml://DATABASE/3808710a-9c3c-4f83-8fd9-12a5c4644e1a.SCHEMA:main">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -548,7 +431,7 @@
               <point x="-61.60000000000002" y="135.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0079545454545453" x="599.1059751972942" y="508.10597519729424" />
+          <settings layout="Hierarchic Group" zoom="1.0079545454545453" x="599.0" y="508.0" />
           <SelectedNodes>
             <node>3808710a-9c3c-4f83-8fd9-12a5c4644e1a.TABLE:main.auth_user</node>
           </SelectedNodes>
@@ -556,6 +439,7 @@
             <Category>Key columns</Category>
             <Category>Columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -572,16 +456,47 @@
     <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
             <element signature="e#0#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3808710a-9c3c-4f83-8fd9-12a5c4644e1a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/migrations/0001_initial.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lunch_orders/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#636#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="391">
           <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -598,26 +513,49 @@
     </entry>
     <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/auth_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="3f773c41-7fc3-43f3-989f-d2dc5553d533">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/auth_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+          <filtering />
         </state>
       </provider>
     </entry>
     <entry file="das://3808710a-9c3c-4f83-8fd9-12a5c4644e1a/schema/main/table/accounts_userprofile">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="3f773c41-7fc3-43f3-989f-d2dc5553d533">
-          <filtering>
-            <filter text="" />
-          </filtering>
+        <state projectRestartId="8acba9f3-7f21-4a1e-a361-5ef2e7fb450a">
+          <filtering />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3808710a-9c3c-4f83-8fd9-12a5c4644e1a/console.sql">
+    <entry file="file://$PROJECT_DIR$/lunch_orders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lunch_orders/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+          <folding>
+            <element signature="e#313#322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/django/Lib/site-packages/decouple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
