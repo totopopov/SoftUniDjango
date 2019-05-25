@@ -19,7 +19,12 @@ class ItemOption(models.Model):
 
 
 class Item(models.Model):
-    name = models.CharField(max_length=20, unique=True)
+    name = models.CharField(max_length=20)
     price = models.DecimalField(decimal_places=2, max_digits=5)
-    lunch_place = models.ForeignKey(LunchPlace, on_delete=models.CASCADE)
+    lunch_place = models.ForeignKey(LunchPlace, on_delete=models.CASCADE, related_name='items')
     option = models.ManyToManyField(ItemOption)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['name', 'lunch_place'], name='No duplicate dish.')
+        ]

@@ -6,7 +6,7 @@ from lunch_orders.utils import MethodSerializerView
 from accounts.permissions import IsSuperUser
 
 from .models import LunchPlace, ItemOption
-from .serializers import LunchPlaceSerializer, LunchPlaceCreateSerializer
+from .serializers import LunchPlaceSerializer, LunchPlaceDetails
 from .serializers import ItemOptionSerializer
 from .permissions import IsAuthorOrSuperUser
 
@@ -28,14 +28,14 @@ class LunchPlaceListMine(MethodSerializerView, generics.ListCreateAPIView):
 
     method_serializer_classes = {
         ('GET',): LunchPlaceSerializer,
-        ('POST',): LunchPlaceCreateSerializer
+        ('POST',): LunchPlaceDetails
     }
 
     permission_classes = (IsAuthenticated,)
 
 
 class LunchPlaceListDetails(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = LunchPlaceSerializer
+    serializer_class = LunchPlaceDetails
     lookup_field = 'name'
     queryset = LunchPlace.objects.all()
 
