@@ -1,10 +1,10 @@
 from rest_framework import generics
 from rest_framework import exceptions
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from lunch_orders.utils import MethodSerializerView
 
-from .models import LunchPlace
-from .serializers import LunchPlaceSerializer, LunchPlaceCreateSerializer
+from .models import LunchPlace, ItemOption
+from .serializers import LunchPlaceSerializer, LunchPlaceCreateSerializer, ItemOptionSerializer
 
 
 # Create your views here.
@@ -24,3 +24,17 @@ class LunchPlaceListMine(MethodSerializerView, generics.ListCreateAPIView):
     }
 
     permission_classes = (IsAuthenticated,)
+
+
+class ItemOptions(generics.ListCreateAPIView):
+    queryset = ItemOption.objects.all()
+    serializer_class = ItemOptionSerializer
+
+    permission_classes = (IsAdminUser,)
+
+
+class ItemOptionDetails(generics.RetrieveUpdateDestroyAPIView):
+    queryset = ItemOption.objects.all()
+    serializer_class = ItemOptionSerializer
+
+    permission_classes = (IsAdminUser,)
