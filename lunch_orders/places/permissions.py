@@ -1,6 +1,12 @@
 from rest_framework.permissions import BasePermission
 
 
-class IsAnonymous(BasePermission):
-    def has_permission(self, request, view):
-        return True if request.user.is_anonymous else False
+class IsAuthor(BasePermission):
+
+    def has_object_permission(self, request, view, obj):
+        return obj.user == request.user
+
+
+class IsAuthorOrSuperUser(BasePermission):
+    def has_object_permission(self, request, view, obj):
+        return obj.user == request.user or request.user.is_superuser

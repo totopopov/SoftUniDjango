@@ -24,6 +24,13 @@ class LunchPlaceCreateSerializer(serializers.ModelSerializer):
         return super(LunchPlaceCreateSerializer, self).create(validated_data)
 
 
+class LunchPlaceDetails(serializers.ModelSerializer):
+
+    class Meta:
+        model = LunchPlace
+        fields = ('name', 'address')
+
+
 class ItemOptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ItemOption

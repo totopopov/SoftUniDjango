@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import RegexValidator
 
 
 # Create your models here.
@@ -7,7 +8,9 @@ from django.contrib.auth.models import User
 
 class LunchPlace(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=20, unique=True)
+    name = models.CharField(max_length=20, unique=True,
+                            validators=[
+                                RegexValidator(regex=r'^\w{4,20}$', message='Length has to be 4', code='nomatch')])
     address = models.CharField(max_length=40)
 
 
