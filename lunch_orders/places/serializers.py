@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
 
 from .models import LunchPlace, Item, ItemOption
 from accounts.serializers import UserNameSerializer
@@ -12,19 +11,15 @@ class ItemOptionSerializer(serializers.ModelSerializer):
 
 
 class ItemSerializer(serializers.ModelSerializer):
-    options = ItemOptionSerializer(many=True, read_only=True)
-
     class Meta:
         model = Item
-        fields = ('name', 'price', 'options')
+        fields = ('name', 'price')
 
 
 class ItemDetailedSerializer(serializers.ModelSerializer):
-    options = ItemOptionSerializer(many=True, read_only=True)
-
     class Meta:
         model = Item
-        fields = ('id', 'name', 'price', 'options')
+        fields = ('id', 'name', 'price')
 
 
 class LunchPlaceSerializer(serializers.ModelSerializer):
@@ -38,11 +33,11 @@ class LunchPlaceSerializer(serializers.ModelSerializer):
 
 class LunchPlaceDetailedSerializer(serializers.ModelSerializer):
     user = UserNameSerializer(read_only=True)
-    items = ItemDetailedSerializer(many=True, read_only=False)
+    items = ItemDetailedSerializer(many=True, read_only=True)
 
     class Meta:
         model = LunchPlace
-        fields = ('name', 'address', 'user', 'items')
+        fields = ('__all__')
 
 
 class LunchPlaceDetails(serializers.ModelSerializer):
@@ -52,7 +47,6 @@ class LunchPlaceDetails(serializers.ModelSerializer):
     def create(self, validated_data):
         user = self.context['request'].user
         validated_data['user'] = user
-
         items_data = validated_data.pop('items')
         lunch_place = super(LunchPlaceDetails, self).create(validated_data)
         for item_data in items_data:
@@ -66,14 +60,8 @@ class LunchPlaceDetails(serializers.ModelSerializer):
             Item.objects.filter(lunch_place_id=instance.id).delete()
         current_options = Item.objects.filter(lunch_place_id=instance.id)
         for item_data in items_data:
-            # item_options = [i['options'] for i in self.data['items'] if i['name'] == item_data['name']][0]
-            # options = []
-            # for item_option in item_options:
-            #     if 'id' in item_option and ItemOption.objects.all().filter(id=item_option['id']).exists():
-            #         options.append(ItemOption.objects.all().filter(id=item_option['id']).get())
             item = current_options.filter(name=item_data['name'])
             item.update_or_create(lunch_place_id=instance.id, defaults=item_data)
-
         return instance
 
     class Meta:

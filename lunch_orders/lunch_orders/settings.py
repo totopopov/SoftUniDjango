@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'rest_auth',
 
     'accounts',
-    'places'
+    'places',
+    'orders',
 ]
 
 MIDDLEWARE = [

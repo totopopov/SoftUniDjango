@@ -1,9 +1,6 @@
-from rest_framework import generics, views
+from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-from rest_framework.response import Response
 from lunch_orders.utils import MethodSerializerView
-from django.http import Http404
-from rest_framework import status
 
 from .models import LunchPlace, ItemOption, Item
 from .serializers import LunchPlaceSerializer, LunchPlaceDetails, LunchPlaceDetailedSerializer

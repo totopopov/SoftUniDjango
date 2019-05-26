@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
+
 from .utils import create_user
 from .models import UserProfile
 
