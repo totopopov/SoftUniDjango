@@ -10,3 +10,8 @@ class IsAuthor(BasePermission):
 class IsAuthorOrSuperUser(BasePermission):
     def has_object_permission(self, request, view, obj):
         return obj.user == request.user or request.user.is_superuser
+
+
+class IsAuthorOfPlaceForField(BasePermission):
+    def has_object_permission(self, request, view, obj):
+        return obj.lunch_place.user == request.user or request.user.is_superuser

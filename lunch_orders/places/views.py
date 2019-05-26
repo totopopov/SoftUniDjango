@@ -1,14 +1,15 @@
-from rest_framework import generics
-from rest_framework import exceptions
+from rest_framework import generics, views
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.response import Response
 from lunch_orders.utils import MethodSerializerView
+from django.http import Http404
+from rest_framework import status
 
-from accounts.permissions import IsSuperUser
-
-from .models import LunchPlace, ItemOption
-from .serializers import LunchPlaceSerializer, LunchPlaceDetails
+from .models import LunchPlace, ItemOption, Item
+from .serializers import LunchPlaceSerializer, LunchPlaceDetails, LunchPlaceDetailedSerializer
 from .serializers import ItemOptionSerializer
-from .permissions import IsAuthorOrSuperUser
+from .serializers import ItemDetailedSerializer
+from .permissions import IsAuthorOrSuperUser, IsAuthorOfPlaceForField
 
 
 # Create your views here.
@@ -34,15 +35,26 @@ class LunchPlaceListMine(MethodSerializerView, generics.ListCreateAPIView):
     permission_classes = (IsAuthenticated,)
 
 
-class LunchPlaceListDetails(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = LunchPlaceDetails
+class LunchPlaceListDetails(MethodSerializerView, generics.RetrieveUpdateDestroyAPIView):
     lookup_field = 'name'
     queryset = LunchPlace.objects.all()
+
+    method_serializer_classes = {
+        ('GET',): LunchPlaceDetailedSerializer,
+        ('POST', 'PUT', 'PATCH', 'DELETE'): LunchPlaceDetails,
+    }
 
     permission_classes = (IsAuthorOrSuperUser,)
 
 
-class ItemOptions(generics.ListCreateAPIView):
+class ItemOptions(generics.ListAPIView):
+    queryset = ItemOption.objects.all()
+    serializer_class = ItemOptionSerializer
+
+    permission_classes = (IsAuthenticated,)
+
+
+class ItemOptionsCreate(generics.CreateAPIView):
     queryset = ItemOption.objects.all()
     serializer_class = ItemOptionSerializer
 
@@ -54,3 +66,10 @@ class ItemOptionDetails(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ItemOptionSerializer
 
     permission_classes = (IsAdminUser,)
+
+
+class ItemDetails(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemDetailedSerializer
+
+    permission_classes = (IsAuthorOfPlaceForField,)
